@@ -184,18 +184,6 @@ Add the plugin URL in your Cowork workspace settings, or clone the repo and poin
 
 ---
 
-## Source fidelity
-
-Every skill was built using this protocol:
-
-1. **NotebookLM sense-check** — queried the full Porter PDF for every sub-factor, checklist, and procedure the skill covers
-2. **Write** — structured the skill using the NLM response as ground truth
-3. **Validation spot-check** — ran a second query to verify a specific detail (e.g., "Does Porter treat government as a sixth force?") and fixed any discrepancies
-
-This matters because strategy frameworks get watered down through summarization. These skills preserve Porter's actual analytical procedures — the 8 entry barrier sub-factors, the 4-question competitor response profile, the 14 evolutionary processes — not MBA-textbook paraphrases.
-
----
-
 ## License
 
 [CC BY 4.0](LICENSE) — free to use, share, and adapt with attribution.
