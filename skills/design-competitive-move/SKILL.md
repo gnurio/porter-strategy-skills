@@ -96,22 +96,7 @@ If a move has already occurred, use **"deny the base"**:
 - **Tactics:** strong price competition, heavy R&D expenditure, attacking new products in test-market phase (cheaper than waiting for full launch), special deals to load customers with inventory (removing the market for the entrant)
 - Essential prerequisite: a good hypothesis about the competitor's performance targets and time horizon
 
-## Heuristics
-
-- Even with clear strengths, a war of attrition is costly to victor and vanquished alike — avoid it
-- The more the competitor thinks you border on irrational in pursuing your commitment, the more wary they will be
-- Behavior communicated to suppliers, customers, channels, and the public all contribute to perceived seriousness
-- Buyers may report secret price cuts that never occurred to encourage discounting — verify before retaliating
-- If retaliation must be generalized rather than focused on the initiator, discipline becomes risky
-
-## Failure Modes
-
-1. **Brute force without finesse** — treating competition as purely a resource game; even superior resources fail against desperate or irrational competitors
-2. **Hollow commitment** — making threats without visible assets, track record, or irreversibility; competitors call the bluff
-3. **Ignoring mixed motives** — attacking head-on when a flanking move would paralyze the competitor's response
-4. **Generalized retaliation** — retaliating broadly instead of targeting the aggressor; triggers chain reaction across the industry
-5. **No deny-the-base hypothesis** — defending without understanding the attacker's performance targets and time horizon
-6. **Misreading cooperative moves** — treating a nonthreatening move as an attack and retaliating, destroying value for all
+During synthesis, consult `reference.md` for Porter's heuristics on moves and commitment; before finalizing, check its failure modes.
 
 ## Output Template
 

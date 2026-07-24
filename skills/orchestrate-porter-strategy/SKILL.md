@@ -90,6 +90,10 @@ For common multi-skill analyses, use these pre-built chains:
 `analyze-five-forces` → `map-strategic-groups` → `select-generic-strategy` → `audit-strategy-consistency`
 **Trigger:** "full competitive analysis", "comprehensive strategy review"
 
+## Environment Assumptions
+
+All skills assume: the user can provide an industry name and basic context; analysis is for a specific firm competing in the industry, not academic; data may be incomplete, so skills should note gaps rather than hallucinate.
+
 ## Context Accumulation
 
 As skills execute, accumulate their outputs in a running context object. Pass relevant prior outputs as input to downstream skills. Present the accumulated analysis to the user at the end.

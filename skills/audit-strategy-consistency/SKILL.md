@@ -54,20 +54,7 @@ The firm's current competitive strategy: explicit goals (financial, market posit
 11. Is there enough congruence between the goals and policies and the values of the key implementers to insure commitment?
 12. Is there sufficient managerial capability to allow for effective implementation?
 
-## Heuristics
-
-- **Assumptions surface inconsistency.** Porter notes that a current strategy reflects assumptions management is making about its industry and relative position. Compare these assumptions against your industry and competitor analysis -- mismatches reveal inconsistencies.
-- **Timing is a test, not a detail.** Two separate timing tests exist: can the environment absorb the actions (B.6), and can the organization change fast enough (C.9)? Strategies often fail one while passing the other.
-- **Societal concerns are not optional.** Government policy, social concerns, and evolving mores can invalidate an otherwise consistent strategy (B.7).
-- **Values drive commitment.** Even a well-designed strategy fails if key implementers' values conflict with required policies (D.11).
-- **Resolution requires data, not just logic.** Porter warns that fixing inconsistency means changing management's deeply held assumptions. The sheer logic of the strategic choice is not enough -- you must muster convincing data to get management to accept a new direction. Inconsistency feeds back into the formulation cycle: generate feasible strategic alternatives, then make a new strategic choice.
-
-## Failure Modes
-
-- **Auditing aspirations instead of strategy.** If goals lack corresponding policies, you are testing a wish list, not a strategy. Flag and stop.
-- **Passing everything.** A clean sweep usually means the audit was too shallow. Push harder on tradeoffs between goals and on competitive response risks.
-- **Ignoring timing.** Strategies that are directionally correct but sequenced wrong still fail the tests.
-- **Skipping implementation.** Internal consistency and environmental fit can look perfect on paper while the organization lacks capability or commitment to execute.
+During synthesis, consult `reference.md` for Porter's heuristics on consistency; before finalizing, check its failure modes.
 
 ## Output Template
 

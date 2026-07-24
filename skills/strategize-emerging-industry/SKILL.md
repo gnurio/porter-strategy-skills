@@ -89,24 +89,7 @@ From the shape/adapt and pioneer/follow decisions, select from Porter's strategi
 5. **Secure tactical advantages** -- early commitments to scarce raw materials; time financing to exploit capital market enthusiasm
 6. **Cope with competitors strategically** -- resist the emotional urge to defend near-monopoly share; consider encouraging certain competitors or licensing technology to develop the market
 
-## Heuristics from Porter
-
-- "Only in rare cases will it be feasible and profitable to defend a near monopoly market share as the industry grows rapidly."
-- Early mobility barriers (proprietary technology, unique product) will erode. The firm "must be prepared to find new ways to defend its position."
-- The nature of entrants shifts over time -- from small, newly created firms to established firms attracted by lower risk and competing on scale and marketing clout.
-- Customers or suppliers may integrate into the industry as it grows.
-- Conventional wisdom in emerging industries is often arbitrary, born from expedient early decisions, not analysis.
-
-## Failure Modes
-
-| Failure | Description |
-|---|---|
-| Defending monopoly share | Expending excessive resources to hold early share instead of building strengths and developing the industry |
-| Relying on early barriers | Assuming proprietary technology or unique product variety will persist as barriers; failing to invest in scale/brand as barriers shift |
-| Ignoring externalities | Pursuing narrow self-interest too early, degrading competitors when the industry needs a united front |
-| Shifting too late | Continuing industry advocacy after penetration is established, failing to defend firm-specific position |
-| Wrong timing bet | Pioneering when market segmentation basis will change, or waiting when learning curve advantages are decisive |
-| Single-scenario planning | Committing to one forecast in a high-uncertainty environment instead of bounding outcomes with scenarios |
+During synthesis, consult `reference.md` for Porter's heuristics on emerging industries; before finalizing, check its failure modes.
 
 ## Output Template
 

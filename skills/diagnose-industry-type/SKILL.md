@@ -104,27 +104,13 @@ If structural: route to end-game strategy. If cyclical: do not classify as decli
 
 | Classification | Downstream Skill |
 |---|---|
-| Emerging | `compete-in-emerging-industry` |
-| Fragmented | `compete-in-fragmented-industry` |
-| Transitioning to maturity | `navigate-maturity-transition` |
-| Declining | `compete-in-declining-industry` |
+| Emerging | `strategize-emerging-industry` |
+| Fragmented | `strategize-fragmented-industry` |
+| Transitioning to maturity | `select-generic-strategy` -- no dedicated maturity skill exists; Porter's maturity advice (compete on cost/service, rationalize product mix) is closest to generic-strategy selection |
+| Declining | `strategize-declining-industry` |
 | Ambiguous / multi-type | Re-gather data or present both classifications with caveats |
 
-## Heuristics from Porter
-
-- Industry maturity does not occur at any fixed point in an industry's development — it can be delayed by innovations or other events that fuel continued growth.
-- Mature industries may regain rapid growth through strategic breakthroughs and go through more than one transition to maturity.
-- Fragmented structure can be a feature, not a bug — some industries have fundamental economic reasons for staying fragmented (diseconomies of scale, diverse market needs).
-- In emerging industries, the absence of rules is both a risk and a source of opportunity.
-- Declining industries can still be profitable if exit barriers are low and remaining demand pockets have favorable characteristics.
-
-## Failure Modes
-
-1. **Confusing cyclical decline with structural decline.** Apply the structural vs. cyclical test before classifying as declining.
-2. **Ignoring the fragmented overlay.** An industry can be both mature AND fragmented — don't force a single label.
-3. **Premature maturity diagnosis.** A growth slowdown may be temporary; look for innovation breakthroughs that could restart growth.
-4. **Insufficient data.** Don't classify with high confidence on 1-2 signals. State what data is missing and what would change the diagnosis.
-5. **Ignoring adjacent industry shifts.** Evolutionary process #12 (structural change in adjacent industries) is frequently overlooked but can reshape classification.
+During synthesis, consult `reference.md` for Porter's heuristics on industry evolution; before finalizing, check its failure modes.
 
 ## Output Template
 
@@ -172,4 +158,4 @@ If structural: route to end-game strategy. If cyclical: do not classify as decli
 
 **Classification:** Declining (structural)
 **Confidence:** High (6+ signals, clear structural cause)
-**Route to:** `compete-in-declining-industry`
+**Route to:** `strategize-declining-industry`

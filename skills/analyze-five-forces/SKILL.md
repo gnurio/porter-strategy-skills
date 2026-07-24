@@ -107,22 +107,7 @@ Porter explicitly rejects treating government or technology as a separate sixth 
 2. **Assess overall profit potential:** The collective strength of the five forces determines long-run return on invested capital. Strong forces = low profit potential; weak forces = attractive industry.
 3. **Strategic positioning:** Can the firm defend against the forces, influence them in its favor, or anticipate shifts and exploit change before rivals recognize it?
 
-## Heuristics
-
-- Even a firm with a strong market position earns low returns if it faces a superior, lower-cost substitute
-- An industry with blocked entry and no substitutes can still have poor profitability if rivalry is intense
-- The extreme case (all forces strong) resembles perfect competition: free entry, no bargaining power, unbridled rivalry, commodity products
-- Buyer selection is itself a strategic variable -- target buyer segments with less intrinsic bargaining power
-- Exit barriers and entry barriers are often related; high exit barriers with low entry barriers = worst case (easy to enter, hard to leave)
-
-## Failure Modes
-
-- **Treating all forces as equal:** The governing force determines profitability; find it
-- **Ignoring government:** Government works through all five forces; omitting it leaves the analysis incomplete
-- **Confusing growth with attractiveness:** A fast-growing industry can have terrible structure (low barriers, commodity product, powerful buyers)
-- **Static analysis only:** Porter insists on forecasting the magnitude of each underlying cause; assess trajectory
-- **Too narrow on substitutes:** Substitutes can come from "businesses seemingly far removed from the industry"
-- **Listing without rating:** Each sub-factor must be assessed for strength, not merely named
+During synthesis, consult `reference.md` for Porter's heuristics on structural analysis; before finalizing, check its failure modes.
 
 ## Output Template
 

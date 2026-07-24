@@ -121,22 +121,18 @@ The orchestrator includes 5 pre-built chains for common analyses:
 porter-strategy-skills/
 ├── skills/
 │   ├── orchestrate-porter-strategy/SKILL.md
-│   ├── analyze-five-forces/SKILL.md
-│   ├── profile-competitor/SKILL.md
-│   ├── map-strategic-groups/SKILL.md
-│   ├── diagnose-industry-type/SKILL.md
-│   ├── select-generic-strategy/SKILL.md
-│   ├── read-market-signals/SKILL.md
-│   ├── analyze-market-entry/SKILL.md
-│   ├── strategize-fragmented-industry/SKILL.md
-│   ├── strategize-emerging-industry/SKILL.md
-│   ├── strategize-declining-industry/SKILL.md
-│   ├── design-competitive-move/SKILL.md
-│   └── audit-strategy-consistency/SKILL.md
-├── heuristics/catalog.md      ← 57 Porter-derived rules of thumb
-├── failures/catalog.md        ← 65 failure modes with root causes
-├── workflows/catalog.md       ← DAG + 5 standalone workflows
-├── routing/context-rules.md   ← Full activation matrix
+│   ├── analyze-five-forces/{SKILL.md, reference.md}
+│   ├── profile-competitor/{SKILL.md, reference.md}
+│   ├── map-strategic-groups/{SKILL.md, reference.md}
+│   ├── diagnose-industry-type/{SKILL.md, reference.md}
+│   ├── select-generic-strategy/{SKILL.md, reference.md}
+│   ├── read-market-signals/{SKILL.md, reference.md}
+│   ├── analyze-market-entry/{SKILL.md, reference.md}
+│   ├── strategize-fragmented-industry/{SKILL.md, reference.md}
+│   ├── strategize-emerging-industry/{SKILL.md, reference.md}
+│   ├── strategize-declining-industry/{SKILL.md, reference.md}
+│   ├── design-competitive-move/{SKILL.md, reference.md}
+│   └── audit-strategy-consistency/{SKILL.md, reference.md}
 └── references/source-summary.md ← Chapter coverage + known gaps
 ```
 
@@ -144,10 +140,9 @@ Each skill includes:
 - Step-by-step procedure using Porter's exact language
 - Exhaustive sub-factor checklists (not summaries)
 - Decision logic for synthesizing findings into recommendations
-- Heuristics — rules of thumb Porter gives for quick judgment calls
-- Failure modes — what goes wrong and how to detect it
 - Structured output template
 - Worked example showing input → output
+- A `reference.md` in the same folder — Porter's heuristics and failure modes for that skill, expanded from the source text and loaded only when the skill consults it (not every run)
 
 ---
 
@@ -164,23 +159,28 @@ Each skill includes:
 
 ## Installation
 
-### Cursor
-
-```
-/add-plugin https://github.com/gnurio/porter-strategy-skills
-```
+Every skill is a portable `SKILL.md` folder — install the whole plugin, or copy individual `skills/<name>/` folders (each is self-contained, including its `reference.md`).
 
 ### Claude Code
 
-Clone into your skills directory:
-
-```bash
-git clone https://github.com/gnurio/porter-strategy-skills.git ~/.claude/skills/porter-strategy
+```
+/plugin marketplace add gnurio/porter-strategy-skills
+/plugin install porter-strategy-skills
 ```
 
-### Cowork
+Manual alternative: copy each `skills/<name>/` folder into `~/.claude/skills/` (personal) or `.claude/skills/` (project, commit it).
 
-Add the plugin URL in your Cowork workspace settings, or clone the repo and point your workspace to the `skills/` directory.
+### Cursor
+
+Install via the Cursor plugin marketplace, or copy each `skills/<name>/` folder into `~/.cursor/skills/` (personal) or `.cursor/skills/` (project).
+
+### Codex CLI
+
+Copy each `skills/<name>/` folder into `~/.agents/skills/` (personal) or `.agents/skills/` (project).
+
+### VS Code (GitHub Copilot)
+
+Copy each `skills/<name>/` folder into `.github/skills/` (project) or `~/.copilot/skills/` (personal) — Copilot also reads `.claude/skills/` and `.agents/skills/`.
 
 ---
 

@@ -89,22 +89,7 @@ Cross-reference findings from Component 2 (Assumptions) against Component 4 (Cap
 - Board composition and outside director affiliations
 - Public statements, earnings calls, trade press, patent filings, job postings
 
-## Heuristics
-
-- A competitor's organizational structure reveals what it considers strategically important. If sales reports to a senior VP and manufacturing reports two levels down, sales dominates strategic thinking.
-- A history of antitrust problems or consent decrees may cause a competitor to forgo reacting to moves by smaller rivals, even when it otherwise would. A firm capturing small share from an industry leader can enjoy protection from such constraints.
-- When management factions disagree on direction, sudden strategy shifts become more likely as power changes hands. Unanimity produces staying power but also stubbornness.
-- Conventional wisdom that is no longer true is the richest source of blind spots. Strategies built around invalidating conventional wisdom yield advantages in timeliness and effectiveness of retaliation response.
-- Parent company portfolio mandates often override business-unit-level rationality. A unit classified as a "cash cow" will underinvest even when the competitive situation demands investment. Attacking a unit the parent is trying to "build" is potentially explosive.
-
-## Failure Modes
-
-1. **Projecting your own goals onto the competitor.** Assuming they want what you want instead of diagnosing their actual goals, values, and incentive systems.
-2. **Treating all competitors as monolithic.** Ignoring factions, parent company mandates, and board dynamics.
-3. **Skipping assumptions analysis.** The blind-spot detection that flows from assumption analysis is the highest-value output of the entire framework. Capabilities tell you what a competitor *can* do; assumptions tell you what it *will* do.
-4. **Static analysis.** Capabilities change as a competitor grows or matures; reassess whether they increase or diminish over time.
-5. **Ignoring the parent company.** For business units of diversified firms, the parent's portfolio role, capital allocation, and emotional attachments may matter more than the unit's own management intentions.
-6. **Confusing stated strategy with actual strategy.** Always check whether operating policies match public statements.
+During synthesis, consult `reference.md` for Porter's heuristics on reading competitors; before finalizing, check its failure modes.
 
 ## Output Template
 

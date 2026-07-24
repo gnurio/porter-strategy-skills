@@ -80,22 +80,7 @@ When fragmentation is INEVITABLE, select one:
 | **Bare bones / no frills** | Low overhead, low-skilled employees, strict cost control, attention to detail | Intense price competition; margins thin industry-wide |
 | **Backward integration** | Selectively integrate to lower costs | Integration feasible for your firm but not for smaller competitors |
 
-## Heuristics
-
-- Fragmentation is the DEFAULT in many industries. The burden of proof is on consolidation, not fragmentation.
-- It takes only ONE economic cause to block consolidation. All causes must be addressed or neutralized.
-- "Stuck" industries are the highest-opportunity targets -- consolidation is cheap because no structural innovation is needed.
-- Franchising is the canonical tool for splitting local-control requirements from national-scale economies.
-- In inevitable fragmentation, strategic positioning matters more than market share. The goal is to become one of the most successful firms while holding only modest share.
-- Avoid the trap of seeking dominance in a fundamentally fragmented industry -- it fights the industry economics.
-
-## Failure Modes
-
-- **Seeking dominance when fragmentation is structural.** Misdiagnosing a cause as overcomable when it is not. Leads to costly, futile share-building.
-- **Ignoring "stuck" opportunities.** Assuming fragmentation always has deep economic roots. Missing easy consolidation targets.
-- **One-size-fits-all coping.** Picking a coping strategy without matching it to the specific cause of fragmentation.
-- **Internal inconsistency.** Combining a coping strategy (e.g., bare bones) with moves that contradict it (e.g., heavy investment in differentiation).
-- **Overlooking exit barriers.** Even if you create scale advantages, competitors with lifestyle or emotional motivations will not exit.
+During synthesis, consult `reference.md` for Porter's heuristics on fragmentation; before finalizing, check its failure modes.
 
 ## Output Template
 

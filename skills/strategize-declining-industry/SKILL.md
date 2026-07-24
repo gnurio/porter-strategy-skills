@@ -80,22 +80,7 @@ Predict: who will exit quickly, who will remain, and who will fight bitterly.
 
 A firm's corporate-level needs (cash flow requirements, portfolio balance, identity considerations) may override the matrix. For example, cash flow urgency may push toward Harvest or Divest even when the matrix suggests Leadership.
 
-## Heuristics from Porter
-
-- Selling assets early recovers far more value than selling after decline is universally recognized.
-- Assets sold within the industry (not retired) can worsen competition for remaining firms if the buyer operates on a lower cost basis.
-- The strengths that matter in decline are NOT necessarily the strengths that mattered during growth — they relate to the remaining pockets of demand.
-- Harvest fails in volatile industries: competitors will seize on your lack of investment to grab share or bid down prices.
-- Government subsidies keeping ailing firms alive are nearly as bad as high exit barriers — capacity stays, and the subsidized firm distorts pricing.
-
-## Failure Modes
-
-1. **Harvesting in a volatile industry** — Competitors immediately steal share when you cut investment; no cash flow benefit materializes.
-2. **Pursuing Leadership without credibility** — Competitors do not believe you will outlast them; investment is wasted in prolonged warfare.
-3. **Hanging on due to emotional attachment** — Managerial pride prevents rational exit; the firm bleeds cash in an inhospitable industry.
-4. **Misreading remaining demand** — Assuming remaining pockets are price-insensitive when they are actually commodity-like and threatened by further substitutes.
-5. **Divesting too late** — Waiting until decline is obvious destroys liquidation value; buyers have all the bargaining power.
-6. **Ignoring competitor exit barriers** — Failing to predict which competitors are trapped leads to underestimating rivalry intensity.
+During synthesis, consult `reference.md` for Porter's heuristics on decline; before finalizing, check its failure modes.
 
 ## Output Template
 

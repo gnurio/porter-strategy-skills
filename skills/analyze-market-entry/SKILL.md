@@ -90,22 +90,7 @@ Weigh total entry cost (barriers + retaliation) against expected industry cash f
 - Retaliation can be absorbed or mitigated by the chosen entry mechanism
 - Expected returns exceed the full cost of entry including intangible barrier costs
 
-## Heuristics from Porter
-
-- Financial analyses commonly undercount entry costs by ignoring intangible barriers and retaliation
-- The most common error is measuring only visible investments (facilities, sales force) and assuming pre-entry industry prices will persist
-- Joint ventures should be analyzed using the same framework as internal entry
-- A sequenced strategy often lowers risk because the firm can segment the risk -- fail cheap before committing to irreversible investments
-- In the market for companies, large premiums over market value are the rule, not the exception
-
-## Failure Modes
-
-- **Counting only visible costs**: ignoring brand franchise, channel access, proprietary technology, and inflated input prices
-- **Assuming pre-entry prices hold**: failing to adjust pro forma for retaliation-driven price depression
-- **Ignoring retaliation probability**: treating entry as if incumbents will not respond
-- **Overpaying for acquisitions**: assuming you can improve the target when your ability is not distinctive (other bidders see the same potential)
-- **Skipping sequenced entry analysis**: going straight for the ultimate target group when a lower-risk stepping-stone exists
-- **Mistaking a bidder's willingness to raise price for evidence of value**: the bidder may have non-economic motives (growth objectives, management idiosyncrasies)
+During synthesis, consult `reference.md` for Porter's heuristics on entry economics; before finalizing, check its failure modes.
 
 ## Output Template
 

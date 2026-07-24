@@ -72,21 +72,7 @@ A cross-parry occurs when Firm A moves in Market X and Firm B responds in Market
 3. If the signal fits a known pattern, interpret it with higher confidence.
 4. If the signal diverges from historical behavior, conduct a full competitor analysis to uncover economic or organizational reasons for the divergence before interpreting.
 
-## Heuristics
-
-- Every signal can be a bluff. Never treat any single signal as definitive without corroboration.
-- The less damaging the chosen action relative to what was feasible, the more likely it is conciliatory.
-- Fighting brands introduced with little push or support before any serious attack are warnings; those backed with full resources are offensive weapons. A fighting brand that copies a specific competitor's product is more effective discipline than a generalized new product.
-- Private antitrust suits are the mildest signal of displeasure -- treat as a cross-parry equivalent.
-- Too much attention to signals can itself be a distraction. Focus analysis time on signals that would materially change your strategic choices.
-
-## Failure Modes
-
-- **Mirror-imaging**: assuming the competitor thinks like you. Always ground interpretation in their goals and assumptions, not yours.
-- **Over-reading a single signal**: one data point is not a pattern. Corroborate with historical behavior and multiple signal types.
-- **Ignoring the medium**: treating a narrow-audience trial balloon the same as a formal public commitment.
-- **Neglecting divergence risk**: assuming historical patterns will always hold. Changed economics or leadership can break patterns.
-- **Confusing conciliation with weakness**: a sub-optimal move may be an invitation to cooperate, not a sign the competitor cannot do more.
+During synthesis, consult `reference.md` for Porter's heuristics on reading signals; before finalizing, check its failure modes.
 
 ## Output Template
 

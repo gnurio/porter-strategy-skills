@@ -102,21 +102,7 @@ Also assess:
 - **Marginal groups** with weak barriers and poor structural position -- candidates for disruption.
 - **Industry trends** that may lower mobility barriers between groups or create new strategic positions.
 
-## Heuristics
-
-- The profit potential of a firm is a function of (a) the industry's common structural characteristics, (b) the structural characteristics of its strategic group (mobility barriers, bargaining power, substitute exposure, rivalry from other groups), and (c) the firm's position within its group.
-- Structural strengths (mobility barriers, bargaining position) are relatively stable and difficult to overcome; implementational strengths (managerial ability, execution) are more ephemeral.
-- When industry structure is unchanging, the cost of overcoming mobility barriers to join an occupied group may eliminate the benefits. Significant repositioning gains come when industry evolution lowers the cost of shifting.
-- Sequenced entry lowers total cost and risk by segmenting the investment: enter via reversible investments first (e.g., private label production), then advance to groups requiring irreversible investments (advertising, R&D).
-
-## Failure Modes
-
-1. **Choosing correlated dimensions** -- selecting axes that move together collapses the map into a diagonal line with no strategic insight.
-2. **Making every firm its own group** -- over-segmenting destroys the analytical power of grouping; cluster firms with genuinely similar strategies.
-3. **Ignoring mobility barriers** -- mapping groups without assessing what prevents movement between them misses the core structural insight.
-4. **Using only one map** -- a single pair of axes may miss important strategic variation; consider multiple maps.
-5. **Confusing quality with technological leadership** -- Porter explicitly warns these do not necessarily go together.
-6. **Ignoring parent company and government relationships** -- these dimensions are easy to overlook but can be decisive in some industries.
+During synthesis, consult `reference.md` for Porter's heuristics on strategic groups; before finalizing, check its failure modes.
 
 ## Output Format
 

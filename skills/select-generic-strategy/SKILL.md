@@ -103,22 +103,7 @@ Porter's position: "Sometimes the firm can successfully pursue more than one app
 
 **Default recommendation:** Pick one strategy and commit totally. Pursuing two as primary targets usually produces stuck-in-the-middle outcomes.
 
-## Heuristics
-
-- Cost leadership demands a firm be THE cost leader, not one of several. Failing to achieve this leaves the firm "in an extremely poor strategic situation."
-- Differentiation does not mean ignoring costs -- but cost is not the primary strategic target.
-- Focus works by serving a narrow target "more effectively or efficiently" than broad competitors. It achieves either low cost or differentiation (or both) within its segment.
-- Each strategy requires "total commitment." Half-measures produce stuck-in-the-middle outcomes.
-- Different strategies "require different styles of leadership and can translate into very different corporate cultures." Different sorts of people will be attracted.
-
-## Failure Modes
-
-1. **Attempting cost leadership without scale or capital access** -- leads to cost disadvantage, not advantage
-2. **Differentiating on attributes buyers do not value** -- pays the cost of differentiation without the premium
-3. **Focusing on a segment too similar to the broader market** -- broad competitors serve it equally well
-4. **Hedging across strategies** -- "conflicting organizational arrangements and motivation systems" guarantee mediocrity
-5. **Ignoring risks** -- e.g., a cost leader blind to product/marketing shifts (Ford 1920s)
-6. **Confusing operational effectiveness with strategy** -- efficiency improvements are not a generic strategy
+During synthesis, consult `reference.md` for Porter's heuristics on generic strategies; before finalizing, check its failure modes.
 
 ## Output Template
 
