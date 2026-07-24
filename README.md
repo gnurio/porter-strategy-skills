@@ -1,10 +1,16 @@
 # Porter Competitive Strategy Skills
 
+![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)
+![Skills](https://img.shields.io/badge/skills-12%20%2B%201%20orchestrator-informational)
+![Works with](https://img.shields.io/badge/works%20with-Claude%20Code%20%C2%B7%20Cursor%20%C2%B7%20Codex%20%C2%B7%20Copilot-6e56cf)
+
 **Turn competitive strategy from abstract theory into structured analysis.**
 
 12 executable skills + 1 orchestrator extracted from Michael Porter's *Competitive Strategy* — the foundational text on industry analysis and competitive positioning. Every skill was sense-checked against the original book via NotebookLM. Every sub-factor, checklist, and decision tree comes from Porter's own language, not summaries or interpretations.
 
 Ask your agent to "analyze this industry" and get a structured five forces assessment with 32 sub-factors rated. Ask "what move should we make?" and get a commitment framework with retaliation predictions. Ask "are we stuck in the middle?" and get a diagnostic checklist with organizational requirements you're missing.
+
+![Demo: running /analyze-five-forces](assets/demo.gif)
 
 ---
 
@@ -22,9 +28,62 @@ The orchestrator detects what you're asking and routes to the right skill(s). Or
 /select-generic-strategy
 ```
 
+```mermaid
+flowchart LR
+    Q["Your question"] --> O["/orchestrate-porter-strategy"]
+    O --> I{"Industry-level?"}
+    O --> C{"Competitor question?"}
+    O --> P{"Positioning question?"}
+    O --> S{"Strategy choice?"}
+    O --> E{"Market entry?"}
+    O --> M{"Competitive move?"}
+    O --> A{"Strategy audit?"}
+    I --> FF["/analyze-five-forces"]
+    C --> PC["/profile-competitor"]
+    P --> MSG["/map-strategic-groups"]
+    S --> GS["/select-generic-strategy"]
+    E --> AME["/analyze-market-entry"]
+    M --> DCM["/design-competitive-move"]
+    A --> ASC["/audit-strategy-consistency"]
+```
+
 ---
 
 ## The 12 skills
+
+Skills chain: a Tier 1 skill's output feeds directly into the Tier 2/3 skills that need it.
+
+```mermaid
+graph LR
+    subgraph T1["Tier 1 — Entry points"]
+        FF["analyze-five-forces"]
+        PC["profile-competitor"]
+        MSG["map-strategic-groups"]
+        DIT["diagnose-industry-type"]
+    end
+    subgraph T2["Tier 2 — Builds on Tier 1"]
+        GS["select-generic-strategy"]
+        RMS["read-market-signals"]
+        AME["analyze-market-entry"]
+        SFI["strategize-fragmented-industry"]
+        SEI["strategize-emerging-industry"]
+        SDI["strategize-declining-industry"]
+    end
+    subgraph T3["Tier 3 — Needs profile + strategy"]
+        DCM["design-competitive-move"]
+        ASC["audit-strategy-consistency"]
+    end
+    FF --> GS
+    FF --> AME
+    MSG --> GS
+    DIT --> SFI
+    DIT --> SEI
+    DIT --> SDI
+    PC --> RMS
+    PC --> DCM
+    GS --> DCM
+    GS --> ASC
+```
 
 ### Tier 1 — Entry points (no dependencies)
 
@@ -98,6 +157,61 @@ Runs 12 consistency tests from Porter's Figure 1-3. Flags where goals contradict
 /design-competitive-move
 ```
 Designs a move that exploits mixed motives — where the competitor's rational response would hurt their own broader goals. Includes commitment requirements and escalation risk assessment.
+
+---
+
+## See it in action
+
+> "Cursor responds not by defending the editor but by attacking Microsoft's layer — hosting. Textbook Porter: respond to an incursion in your market by moving into the initiator's core market."
+
+**Why is Cursor investing in Origin?** A real analysis of Cursor's Origin announcement, run through this plugin's signal-reading and market-entry skills — [original thread](https://x.com/nurijanian/status/2073222501749105016).
+
+<details>
+<summary><strong>Read the full analysis</strong></summary>
+
+### Baseline facts
+
+Origin announced June 17, 2026 at Cursor's Compile conference — one day after SpaceX announced its $60B all-stock acquisition of Anysphere (option secured April 21, closing Q3 2026). Built by the Graphite team (acquired December 2025). Waitlist now, GA fall 2026. Claims: 22.6 commits/sec in one repo, 296K clones/hour, sub-400ms global sync, AI-driven merge-conflict resolution, stacked PRs native. Cursor is at ~$4B ARR, ~$2.6B from enterprise. GitHub's counter-position is Agent HQ (Universe 2025), which invites rival agents — including Claude Code, OpenAI, Cognition — into GitHub as the orchestration hub.
+
+### Signal read
+
+**Type:** Prior announcement of moves (Type 1) + discussion of own moves (Type 4 — the performance numbers exist to communicate "we spent real resources on this, don't dismiss it").
+
+**Bluff vs. commitment:** Commitment, high confidence. Three markers: (1) formal, broad-audience medium at their own conference — hard to retract; (2) sunk cost — they bought Graphite six months earlier specifically for this; (3) stressing cost and difficulty (infra architecture, throughput demos) is Porter's classic earnest-commitment signal. The months-ahead announcement isn't conciliation; it's preemption — freezing enterprise buyers who might otherwise deepen GitHub Agent HQ commitments this year.
+
+The most important classification: this is a **cross-parry**. Microsoft moved into Cursor's layer (Agent HQ makes GitHub the agent orchestration point, commoditizing the editor/agent layer). Cursor responds not by defending the editor but by attacking Microsoft's layer — hosting.
+
+### Entry analysis: why code hosting is winnable for Cursor specifically
+
+Barriers into git hosting are brutal in general: network effects (100M+ devs, OSS gravity), switching costs (CI/CD, integrations, compliance, audit history), and a price floor of free. A generic entrant dies here. Cursor's entry works because it stacks four of Porter's generic entry concepts at once:
+
+1. **Discover a new niche** — agent-scale workloads. GitHub's infrastructure and UX assume human-scale concurrency: rate limits, merge queues, PR review designed for people. Hundreds of parallel agents cloning/rebasing the same repo breaks those assumptions.
+2. **Offer a superior product** — for that niche: throughput, sync latency, machine-actionable review, automated conflict resolution.
+3. **Piggybacked distribution** — the decisive one. Cursor doesn't need to win developers; it already has them. Every enterprise Cursor contract is a channel for Origin, entering through private enterprise repos — exactly where GitHub's network effects are weakest.
+4. **Entry via acquisition** — Graphite gave them the review layer and team without building from scratch.
+
+Sequencing: waitlist → existing Cursor enterprise teams → broader market. Not attacking OSS hosting, GitHub's fortress. Retaliation forecast: high probability but limited in form — GitHub can't cut price (already free), so expect faster Agent HQ shipping, deeper Copilot bundling into E5/Azure, and possibly friction on API access for Cursor. None of that stops entry through Cursor's own installed base.
+
+### The strategic logic — angles beyond "GitHub isn't agent-ready"
+
+1. **Removing dependence on a hostile complement.** Cursor's core product operates on top of infrastructure owned by its chief competitor. Microsoft owns the repo, the telemetry, the trigger points, and can degrade Cursor's position at will. Origin is vertical integration to eliminate a supplier-power problem — Porter's five forces applied to their own value chain.
+2. **Owning the context is owning the moat.** The repo is where the data lives: codebase graph, review history, merge decisions, agent performance traces. Whoever hosts the code has the best context for training and steering coding agents.
+3. **Repricing ahead of the seat-model collapse.** Cursor's revenue is largely per-human-seat. If agents write most code, seat counts stagnate — the better Cursor's agents get, the worse its own pricing model performs. Hosting and orchestration monetize by workload, not headcount.
+4. **Value migration up the stack.** As code generation commoditizes, the scarce point shifts to reviewing, merging, and coordinating swarms of agents safely. Model → editor → agents → review → hosting: full vertical integration, with the repo as the anchor tenant.
+5. **Counter-positioning.** GitHub can build agent-scale infrastructure, but rebuilding the forge around agents means disrupting workflows for 100M human users, Copilot's seat economics, and Microsoft's enterprise bundling. Cursor carries none of that legacy.
+6. **SpaceX capital changes the retaliation math.** Backed by a $60B acquirer with no need for near-term software profits, Cursor can absorb a long, free-tier hosting war a standalone startup couldn't. The one-day gap between the acquisition announcement and Origin is itself a signal.
+
+### What falsifies this play?
+
+Enterprise inertia is the key assumption at risk — repos are the stickiest asset in the SDLC. If Cursor's enterprise base won't migrate repos even while happily using the editor, Origin becomes an expensive feature, not a platform. Second risk: GitHub ships credible agent-scale primitives inside Agent HQ before fall 2026 GA. Third: the SpaceX deal introduces buyer hesitancy over code custody inside a Musk-controlled entity.
+
+### Net assessment
+
+The "GitHub isn't built for agents" story is the wedge, not the reason. The reason: reduce reliance on Microsoft's platform, take control of the data and context layer, and shift revenue sources before AI agents reduce the value of per-seat pricing. Conditional GO by Porter's own entry test — distinctive advantage (installed base + Graphite + capital) lowers barrier costs below any other potential entrant's.
+
+*Full disclosure: it's possible general model reasoning contributed to these results independent of the plugin's structure — worth re-running without it to isolate the effect. Since the plugin is free either way, that's a debate for another day.*
+
+</details>
 
 ---
 
